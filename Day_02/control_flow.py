@@ -55,4 +55,72 @@ print("have a nice day")
 # lets dive into the logical operators 
 # let we build an apllication for the loan giving now we have to decide that who is eligible for loan.
 # we will learn how to use And Or and Not operaters.
-d:
+high_income = True
+good_credit = False
+Student = True
+
+if high_income and good_credit:
+    print("eligible")
+else:
+    print("Not eligible")
+# lets seehow or operater works.
+if high_income or good_credit:
+    print("eligible")
+else:
+    print("Not eligible")
+# lets try out the not operater.
+if not Student:
+    print("eligible")
+else:
+    print("Not eligible")
+
+# lets dig dive into the short circuit evaluation.
+if high_income or good_credit or not Student:
+    print("eligible")
+else:
+    print("Not eligible")
+# 
+if high_income and good_credit and not Student:
+    print("eligible")
+else:
+    print("Not eligible")
+# lets dig into chaining comparison operators.
+# lets we asume age should be in between 18 and 65.
+age =22
+if age >= 18 and age <= 65:
+    print(" you are eligible for the loan")
+
+# lets dig dive into the loop and nested loops.
+# here the number is integer and which initiates the loop.
+for number in range(4):
+    print("dont give me excuses that you dont have time", number )
+# lets play with for loops and if else.
+successful = False
+for number in range(5):
+    print("hello buddy")
+    if successful:
+        print("succesful")
+    else:
+        print("you have to be productive programmer")
+# lets understan the logic of nested loops.
+# in the below code we are printing the x and y co ordinates.
+for x in range(3):
+    for y in range(3):
+        print(f"({x}, {y})")
+# in pyhton we have like primitive type like numbers strings and booleans.
+print(type(5))
+print(type(range(7)))
+# so the range is primitive type.
+# so the x will print the character of string in iterative order.
+for x in "python":
+    print(x)
+
+# later on i will implement the list in detail. 
+for y in [1,2,3,4,5,6]:
+    print(y)
+
+# let dig into the while loops and know how while loop works.
+number =100
+while number > 0:
+    print(number)
+    number = number // 2
